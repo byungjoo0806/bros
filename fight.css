@@ -1,0 +1,369 @@
+.mainBox-wrap{
+    width: 1300px;
+    height: 800px;
+    border: 1px solid black;
+    border-radius: 10px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.choiceBox{
+    width: 1300px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+
+    position: fixed;
+    bottom: 0;
+    right: 0;;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.attack{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    background: rgb(204, 156, 0);
+    background: linear-gradient(0deg, rgb(228, 137, 0) 0%, rgb(255, 193, 70) 100%);
+    border: none;
+
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+}
+
+.attack:hover{
+    background: rgb(204, 156, 0);
+    background: linear-gradient(0deg, rgb(255, 177, 59) 0%, rgb(255, 193, 70) 100%);
+
+    box-shadow:  2px 2px 4px 0 rgba(255,255,255,.5),
+              -2px -2px 4px 0 rgba(116, 125, 136, .5), 
+    inset -2px -2px 4px 0 rgba(255,255,255,.2),
+    inset 2px 2px 4px 0 rgba(0, 0, 0, .4);
+}
+
+.steal{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    background: rgb(204, 156, 0);
+    background: linear-gradient(0deg, rgb(228, 137, 0) 0%, rgb(255, 193, 70) 100%);
+    border: none;
+
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+}
+
+.steal:hover{
+    background: rgb(204, 156, 0);
+    background: linear-gradient(0deg, rgb(255, 177, 59) 0%, rgb(255, 193, 70) 100%);
+
+    box-shadow:  2px 2px 4px 0 rgba(255,255,255,.5),
+                 -2px -2px 4px 0 rgba(116, 125, 136, .5), 
+    inset -2px -2px 4px 0 rgba(255,255,255,.2),
+    inset 2px 2px 4px 0 rgba(0, 0, 0, .4);
+}
+
+.itemUse{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    background: rgb(204, 156, 0);
+    background: linear-gradient(0deg, rgb(228, 137, 0) 0%, rgb(255, 193, 70) 100%);
+    border: none;
+
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+}
+
+.itemUse:hover{
+    background: rgb(204, 156, 0);
+    background: linear-gradient(0deg, rgb(255, 177, 59) 0%, rgb(255, 193, 70) 100%);
+
+    box-shadow:  2px 2px 4px 0 rgba(255,255,255,.5),
+              -2px -2px 4px 0 rgba(116, 125, 136, .5), 
+    inset -2px -2px 4px 0 rgba(255,255,255,.2),
+    inset 2px 2px 4px 0 rgba(0, 0, 0, .4);
+}
+
+.fightBox{
+    width: 1300px;
+    height: 700px;
+    display: block;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+    background-color: white;
+    /* background-image: url(http://www.safetimes.co.kr/news/photo/201802/62485_32779_2339.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.5; */
+}
+
+.playerBox{
+    width: 1300px;
+    height: 350px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.monsterBox{
+    width: 1300px;
+    height: 350px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.statBox{
+    width: 400px;
+    height: 100px;
+    /* border: 1px solid; */
+    display: block;
+}
+
+.playerNameTag{
+    width: 400px;
+    height: 50px;
+    border-bottom: 1px solid;
+
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+}
+
+.monsterNameTag{
+    width: 400px;
+    height: 50px;
+    border-bottom: 1px solid;
+
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+}
+
+.playerHp{
+    width: 400px;
+    height: 50px;
+
+    display: block;
+}
+
+.playerHpNumber{
+    width: 400px;
+    height: 25px;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.playerHpBarImage{
+    /* width: 400px; */
+    height: 25px;
+
+    background-color: red;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+}
+
+.monsterHp{
+    width: 400px;
+    height: 50px;
+
+    display: block;
+}
+
+.monsterHpNumber{
+    width: 400px;
+    height: 25px;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.monsterHpBarImage{
+    /* width: 400px; */
+    height: 25px;
+
+    background-color: red;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+}
+
+.playerImage{
+    width: 300px;
+    height: 300px;
+    /* border: 1px solid black; */
+
+    /* animation: attackingMotion 1s ease; */
+}
+
+.playerImg{
+    width: 300px;
+    height: 300px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.monsterImage{
+    width: 300px;
+    height: 300px;
+    /* animation: MotionWhenHit 0.5s ease; */
+    /* animation: monsterAttackingMotion 1s ease; */
+}
+
+.muheonImg{
+    width: 300px;
+    height: 300px;
+
+    background-image: url(https://mblogthumb-phinf.pstatic.net/20160806_73/ildholic_1470482049105g1Ldb_JPEG/%BB%E7%B4%D9%C4%EC%BF%EC%BE%DF.jpg?type=w2);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.ahyeonImg{
+    width: 300px;
+    height: 300px;
+
+    background-image: url(https://post-phinf.pstatic.net/MjAyMTA1MjRfNjUg/MDAxNjIxODUyOTg3MDgy.0d5XXyp1QLlSTydmJh_JwFOYUKI2s_pBpvoEcfZckzYg.EghZ5z9HhZw1R3f0YrNt7iIQtsZOy5K3v3YAcQmfCxog.JPEG/%EC%95%84%EB%8D%B8.jpg?type=w1200);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.hyunwookImg{
+    width: 300px;
+    height: 300px;
+
+    background-image: url(https://mblogthumb-phinf.pstatic.net/MjAyMTA3MDJfODEg/MDAxNjI1MTU3MjEyMDE0.CTCdqSWmORfOSnhss_h84WSogRifzKbWECjm1AlIuX8g.GbPvoCWLDyw8yVcCh3ESzvthiarZOyj3C6CFw_WVpQ4g.JPEG.joseokho7/20210131%EF%BC%BF034919%EF%BC%BF567.jpg?type=w800);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.jisupImg{
+    width: 300px;
+    height: 300px;
+
+    background-image: url(https://i.namu.wiki/i/YT_M-OH6LSCNR5xdJlE391TitFjITZIJXcA_fnLvcxrnVoDycPF8DOwM9SUnyN3fg7m5Lkn2ttznZwbGBqz-CHc071pRb6ZxShTxHbLxM8N0ZtMhwdoEjcirlhRA-wSCPybR5wwpkQWpilSpLdSrSw.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.professorImg{
+    width: 300px;
+    height: 300px;
+
+    background-image: url(http://www.urbanbrush.net/web/wp-content/uploads/edd/2018/01/web-20180130131615517922.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bossImg{
+    width: 300px;
+    height: 300px;
+
+    background-image: url(https://mblogthumb-phinf.pstatic.net/MjAxNzA3MTJfMjcw/MDAxNDk5ODMxMzg4NTI2.QsstULHxWvXU8owRkVIWOWynfjCmo3kLqcV16cpY8mAg.bqYIT1ZAjgxytvBVRfjdTAnpCMAIQ9X9lh4RKtpgpmog.PNG.brteddy/boss-baby.png?type=w800);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.megacoffeeImg{
+    width: 300px;
+    height: 300px;
+
+    background-image: url(https://play-lh.googleusercontent.com/VqbTxYdW4j7gLIPUvg_8uEmLZ6XLXP3d8fsZiN3R7jl_wg3VZqDNz6mb4FQs-aM69pg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@keyframes attackingMotion{
+    0%{
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(300px, -100px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+
+@keyframes monsterAttackingMotion{
+    0%{
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(-300px, 100px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+
+@keyframes MotionWhenHit{
+    0%{
+        transform: rotate(0deg);
+    }
+    10%{
+        transform: rotate(5deg);
+    }
+    20%{
+        transform: rotate(-5deg);
+    }
+    30%{
+        transform: rotate(5deg);
+    }
+    40%{
+        transform: rotate(-5deg);
+    }
+    50%{
+        transform: rotate(5deg);
+    }
+    60%{
+        transform: rotate(-5deg);
+    }
+    70%{
+        transform: rotate(5deg);
+    }
+    80%{
+        transform: rotate(-5deg);
+    }
+    90%{
+        transform: rotate(5deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
